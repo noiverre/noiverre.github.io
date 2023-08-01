@@ -37,7 +37,7 @@
       #header {
         text-align: center;
       }
-      #page1 {
+      #page {
         text-align: center;
       }
     </style>
@@ -77,38 +77,52 @@
         </h1>
       </div>
     </section>
-    <section id="page1"">
+    <section id="page">
       <div
         class="row"
         style="
           background-image: url();
-          background-size: 100%;
+          background-size: 50%;
           height: 50vh;
           margin: 0;
           position: relative;
         "
       >
-        <div
-          style="
-            position: left;
-            width: 60%;
-            height: auto;
-            background-color: #aaf9ff;
-          "
-        >
-          <p style="padding-top: 1%">test</p>
+        <div class="col-7" style="background-color: white">
+          <p style="font-weight: bold; font-size: 32px; padding-top: 32px">
+            Raeliana McMillan
+          </p>
         </div>
+        <!-- <div class="col-5" style="padding: 0">
+          <img
+            src="img/raeliana.jpg"
+            alt="waifu"
+            style="
+              width: 100%;
+              height: 50vh;
+              object-fit: cover;
+              object-position: right;
+            "
+          />
+        </div> -->
         <div
+          class="col-5"
           style="
-            position: right;
-            width: 40%;
-            height: auto;
-            background-color: #cbffbb;
+            padding: 0;
+            background-image: url(img/raeliana.jpg);
+            background-position: right;
+            background-position: bottom;
+            background-attachment: fixed;
+            background-size: cover;
+            background-repeat: no-repeat;
           "
         >
-          <p style="padding-top: 1%">test</p>
+          &lt;3
         </div>
       </div>
+    </section>
+    <section id="page">
+      <div style="background-color: black; height: 50vh"></div>
     </section>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
