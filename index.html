@@ -11,6 +11,12 @@
 
     <title>Learning!</title>
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
@@ -40,6 +46,9 @@
       #page {
         text-align: center;
       }
+      * {
+        font-family: "Roboto", sans-serif;
+      }
     </style>
 
     <link href="css/bootstrap.min.css" rel="stylesheet" />
@@ -49,13 +58,20 @@
     <section id="header">
       <div
         style="
-          background-image: url(),
+          background-image: url(img/red-background.jpg),
             linear-gradient(45deg, #cbffbb, #ffffff, #aaf9ff);
           background-size: cover;
           background-repeat: no-repeat;
+          background-attachment: fixed;
+
           height: 100vh;
           margin: 0;
           position: relative;
+
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
         "
       >
         <img
@@ -64,17 +80,17 @@
           class="avatar"
           style="margin: 0 auto 0 auto; padding-bottom: 1%; padding-top: 1%"
         />
-        <h1 id="head1">
-          Jan Wafa Karsiena
-          <h2>
-            <p id="head1">Internet Surfer</p>
-            <h3>
-              <a href="/profile.html">
-                <p id="head1">My Profile</p>
-              </a>
-            </h3>
-          </h2>
-        </h1>
+        <div>
+          <h1 id="head1" style="font-weight: bolder">
+            Jan Wafa Karsiena
+            <h2>
+              Internet Surfer
+              <h3>
+                <a href="/profile.html"> My Profile </a>
+              </h3>
+            </h2>
+          </h1>
+        </div>
       </div>
     </section>
     <section id="page">
@@ -89,22 +105,32 @@
         "
       >
         <div class="col-7" style="background-color: white">
-          <p style="font-weight: bold; font-size: 32px; padding-top: 32px">
-            Raeliana McMillan
+          <p
+            style="
+              font-weight: bold;
+              font-size: 100px;
+              text-align: start;
+              word-wrap: normal;
+              text-overflow: clip;
+              position: absolute;
+            "
+          >
+            McMillan
+          </p>
+          <br />
+          <p
+            style="
+              font-weight: bold;
+              font-size: 325px;
+              text-align: start;
+              word-wrap: normal;
+              text-overflow: clip;
+              position: absolute;
+            "
+          >
+            Raeliana
           </p>
         </div>
-        <!-- <div class="col-5" style="padding: 0">
-          <img
-            src="img/raeliana.jpg"
-            alt="waifu"
-            style="
-              width: 100%;
-              height: 50vh;
-              object-fit: cover;
-              object-position: right;
-            "
-          />
-        </div> -->
         <div
           class="col-5"
           style="
@@ -122,7 +148,17 @@
       </div>
     </section>
     <section id="page">
-      <div style="background-color: black; height: 50vh"></div>
+      <div
+        style="
+          background-image: url(img/red-background.jpg);
+          background-size: 100%;
+          background-repeat: no-repeat;
+          background-position: top;
+          background-attachment: fixed;
+
+          height: 50vh;
+        "
+      ></div>
     </section>
     <script src="js/jquery.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
